@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { genesysApi } from '../../api/genesysApi';
+import './css/loginpage.css'
 
 export const LoginPage = ({navigation}:any) => {
 
@@ -58,7 +59,20 @@ export const LoginPage = ({navigation}:any) => {
                 <button className="btn btn-primary btn-block mb-4">Ingresar</button>
             </div>
         </form>
-        <div className="contLogo" id="contLogo"></div>
+        <div className="contLogoMin animar">
+            <img src="/assets/img/LogoQboxMin.png" alt="" />
+        </div>
+        {/* <LottieView
+            autoPlay
+            // ref={animation}
+            style={{
+              width: 200,
+              height: 200,
+              backgroundColor: '#eee',
+            }}
+            // Find more Lottie files at https://lottiefiles.com/featured
+            source={require('/assets/Qbox.json')}
+        /> */}
     </View>
   )
 }
@@ -66,7 +80,7 @@ export const LoginPage = ({navigation}:any) => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: 'linear-gradient(143deg, rgba(0,1,41,1) 0%, rgb(11, 51, 74) 68%, rgba(44,197,171,0.5323275862068966) 88%, rgba(50,224,190,0.6961206896551724) 99%)',
       alignItems: 'center',
       justifyContent: 'center',
     },
