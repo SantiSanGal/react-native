@@ -157,3 +157,8 @@ button:focus{
     height: 7vh;
     width: 100%;
 }
+
+.participante{
+    background-color: #075E54;
+    margin-left: auto;
+}
